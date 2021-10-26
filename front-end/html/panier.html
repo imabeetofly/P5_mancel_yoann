@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panier Oricam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h1>ORICAM</h1></a>
+    </header>
+    <div id="la-page">
+      <ul id="product_container">
+        <li id="order-formulaire">
+          <div id="total-price">
+            Montant :
+            <p id="calculated-total-price"></p>
+          </div>
+          <form id="input-container">
+            <input
+              id="form-last-name"
+              type="text"
+              placeholder="nom"
+              name="lastName"
+              required
+            />
+            <input
+              id="form-first-name"
+              type="text"
+              placeholder="prenom"
+              name="firstName"
+              required
+            />
+            <input
+              id="form-address"
+              type="text"
+              placeholder="adresse"
+              name="address"
+              required
+            />
+            <input
+              id="form-city"
+              type="text"
+              placeholder="ville"
+              name="city"
+              required
+            />
+            <input
+              id="form-email"
+              type="text"
+              placeholder="email"
+              name="email"
+              required
+            />
+          </form>
+          <div id="button-container">
+            <div id="back-to-landing"><a href="index.html">Accueil</a></div>
+            <div id="delete-all-btn">
+              <a href="panier.html">Tout supprimer</a>
+            </div>
+            <div id="order-btn">Commander</div>
+          </div>
+        </li>
+        <li id="cart-item-container"></li>
+      </ul>
+    </div>
+    <footer>
+      <a href="mailto:orinocam@gmail.com"> <p>Nous Contacter</p></a>
+    </footer>
+  </body>
+  <script src="../js/cart.js"></script>
+</html>
